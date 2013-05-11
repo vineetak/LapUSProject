@@ -1,0 +1,27 @@
+#pragma once
+#include "c:\qt\4.8.4\src\gui\widgets\qtabwidget.h"
+#include <QListWidget>
+#include <QDir>
+#include <QFileInfoList>
+#include <QFileInfo>
+#include <iostream>
+#include <QListWidget>
+#include <QDateTime>
+class USBrowserListItem :
+	public QListWidgetItem
+{
+
+private:
+	/* US image file path */
+	QString USFile;
+	/* Live image file path */
+	QString LiveFile;
+	/* List item icon */
+	QIcon icon;
+public:
+	USBrowserList(QString,QString);
+	USBrowserList(void);
+	//USBrowserList(QWidget* parent);
+	~USBrowserList(void);
+};
+
